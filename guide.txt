@@ -2,10 +2,10 @@
 # Should work for newer versions
 
 # Required for building
-apt install zlib1g-dev libffi-dev libreadline-gplv2-dev libreadline5 libssl-dev
+sudo apt install zlib1g-dev libffi-dev libreadline-gplv2-dev libreadline5 libssl-dev
 
 # Optional Dependences
-apt install libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev libsqlite3-dev tk-dev uuid-dev libreadline-dev
+sudo apt install libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev libsqlite3-dev tk-dev uuid-dev libreadline-dev
 
 # get source, this is 3.9 alpha
 git clone https://github.com/python/cpython.git
