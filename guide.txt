@@ -1,0 +1,18 @@
+# This was made while Compiling Python3.8 from source
+# Should work for newer versions
+
+# Required for building
+apt install zlib1g-dev libffi-dev libreadline-gplv2-dev libreadline5 libssl-dev
+
+# Optional Dependences
+apt install libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev libsqlite3-dev tk-dev uuid-dev libreadline-dev
+
+# get source, this is 3.9 alpha
+git clone https://github.com/python/cpython.git
+cd cpython
+./configure
+make
+# make altinstall is to prevent from over-writing previous python versions
+# For example, my Debian has Python3.7
+# make altinstall will let me install python3.11, without over-writing python3.7
+make altinstall
